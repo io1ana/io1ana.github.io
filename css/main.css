@@ -1,47 +1,63 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-.cv {
-    width: 960px;
     margin: 0 auto;
 }
+
+/* element "header" contains block of class "header_txt_left", photo & address */
+
 header {
     width: 940px;
     height: 180px;
-    border: solid;
-    border-color: black;
+    border: solid black;
+    overflow: hidden
 }
-.iryna {
-    display: block
-       margin-top: 40px;
-    margin-left: 300px;
+
+/*beginning block of class "header_txt_left"*/
+
+.header_txt_left {
+    float: left;
 }
-.description {
-    display: block
-       margin-top: 74px;
-    margin-left: 300px;
-    width: 240px;
+
+
+/*class "header_txt_left" contains txt*/
+
+.iryna_txt {
+    margin-left: 200px;
+/*        float: left;*/
 }
+
+.description_txt {
+    width: 300px;
+    margin-left: 200px;
+/*        float: left;*/
+}
+
+
+/*end of class "header_txt_left"*/
+
 .photo {
-    margin-top: 32px;
-    margin-left: 620px;
-    
+/*        margin-top: 25px;*/
+    width: 100px;
+    height: 200px;
+    background-image: url('../img/photo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+       float: left;
 }
-.adres {
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 40px;
+
+.address_txt {
+    float: left;
     width: 170px;
-    
 }
-.employment {
+
+
+/* element "section" contains block of class "employment_block" */
+
+/*
+.employment_block {
     background-color: #aca29a;
     border: solid;
     border-color: blue;
     width: 940px;
     height: 280px;
-    
 }
-
-
+*/
