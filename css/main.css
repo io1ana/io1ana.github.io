@@ -1,19 +1,34 @@
+@font-face {
+    font-family: 'franklingothic-book';
+    src: url('Webfonts/franklingothicfs_book_macroman/franklingothic-book-webfont.woff2') format('woff2'), url('Webfonts/franklingothicfs_book_macroman/franklingothic-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+/*    Не можу встановити font*/
+}
+
 * {
     margin: 0 auto;
+    font-family: sans-serif, 'franklingothic-book';
 }
+
 
 /* element "header" contains block of class "header_txt_left", photo & address */
 
 header {
+    padding-top: 20px;
     width: 940px;
-    height: 180px;
-    border: solid black;
-    overflow: hidden
+    height: 150px;
+    /*    border: solid black;*/
 }
 
-/*beginning block of class "header_txt_left"*/
+
+/*beginning the block of class "header_txt_left"*/
 
 .header_txt_left {
+    /*    font-size: small;*/
+/*    font по-замовчуванню для спадкування*/
+    font-size: medium;
+    padding-right: 20px;
     float: left;
 }
 
@@ -21,38 +36,51 @@ header {
 /*class "header_txt_left" contains txt*/
 
 .iryna_txt {
+/*    Яка залежність від батька?*/
+    font-size: 1.95em;
+    /*    font-size: x-large;*/
+    /*    font-size: 30px;*/
+    width: 300px;
     margin-left: 200px;
-/*        float: left;*/
+    /*            float: left;*/
 }
 
 .description_txt {
+    font-size: 1em;
     width: 300px;
     margin-left: 200px;
-/*        float: left;*/
+    /*        float: left;*/
 }
 
 
 /*end of class "header_txt_left"*/
 
 .photo {
-/*        margin-top: 25px;*/
+    /*        margin-top: 25px;*/
+    /*    margin-bottom: 0;*/
+    display: inline-block;
     width: 100px;
-    height: 200px;
-    background-image: url('../img/photo.jpg');
+    height: 115px;
+    background-image: url('/img/photo.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-       float: left;
+    float: left;
 }
 
 .address_txt {
-    float: left;
+/*    Як вплинути на розмір атрибутом smaller, якщо гарнітуру потрібно збільшити?*/
+    font-size: smaller;
+    /*    font-size: 17px;*/
+    float: right;
     width: 170px;
+    margin-right: 130px;
+    display: block;
+    padding: 5px 0px 0px 5px;
 }
 
 
 /* element "section" contains block of class "employment_block" */
 
-/*
 .employment_block {
     background-color: #aca29a;
     border: solid;
@@ -60,4 +88,3 @@ header {
     width: 940px;
     height: 280px;
 }
-*/
