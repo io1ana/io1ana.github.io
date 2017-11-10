@@ -1,0 +1,42 @@
+#dropZone {
+    width: 500px;
+    height: 300px;
+    padding: 2rem;
+    background-color: lightslategrey;
+    border: 2px solid darkslategray;
+    margin-bottom: 2rem;
+    /*    transition: background-color .2s;*/
+}
+
+/*
+#dropZone.over {
+    background-color: lightgreen;
+}*/
+
+/*#dropTitle {
+    text-transform: capitalize;
+}*/
+
+.objects {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    background-color: rosybrown;
+    cursor: move;
+    /*    user-select: none;*/
+}
+
+/*
+.objects.dragged {
+    background-color: firebrick;
+    border-radius: 5px;
+}
+*/
+
+#readDropZone {
+    cursor: pointer;
+    border: none;
+    /*    background-color: cornflowerblue;*/
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
